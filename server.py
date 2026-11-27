@@ -109,6 +109,11 @@ def stats():
     field_number = {"technology": 0, "data": 0, "design": 0, "business": 0}
 
     for s in students:
+        if "interest" not in s or "level" not in s or "top_career" not in s or "top_match" not in s:
+            continue
+        if s["interest"] not in field_total or s["level"] not in levels:
+            continue
+
         if s["name"] not in names:
             names.append(s["name"])
 

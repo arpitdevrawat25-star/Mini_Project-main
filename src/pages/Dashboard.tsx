@@ -5,7 +5,6 @@ import userImg from "../assets/user.png";
 import { FaRegBell } from "react-icons/fa";
 import data from "../assets/data.json";
 import { BarChart, DoughnutChart } from "../components/Charts";
-import { BiMaleFemale } from "react-icons/bi";
 import Table from "../components/DashboardTable";
 import { useCareer } from "../CarrierContext";
 
@@ -42,8 +41,15 @@ const Dashboard = () => {
       : [
           "Software Developer",
           "Data Analyst",
-          "Product Design Meetup",
-          "UI Designer",
+          "UI/UX Designer",
+          "Digital Marketer",
+          "Cybersecurity Analyst",
+          "Project Manager",
+          "Web Designer",
+          "Machine Learning Engineer",
+          "Network Engineer",
+          "Content Writer",
+          "Database Administrator",
         ];
 
   const total = stats ? stats.total : 0;
@@ -96,7 +102,7 @@ const Dashboard = () => {
 
         <section className="graphContainer">
           <div className="revenue-chart">
-            <h2>Carrer Compatibility </h2>
+            <h2>Carrier Compatibility </h2>
             <BarChart
               data1={matches}
               labels={careerNames}
@@ -130,10 +136,10 @@ const Dashboard = () => {
                 "rgba(53,162,235,0.8)",
                 "rgb(255,196,0)",
               ]}
-              cutout={75}
+              cutout="75%"
             />
             <p>
-              <BiMaleFemale />
+              
             </p>
           </div>
 

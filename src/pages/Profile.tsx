@@ -38,7 +38,7 @@ const Profile = () => {
                 <strong>{age}</strong>
               </p>
               <p>
-                <span>Intrest</span>
+                <span>Interest</span>
                 <strong>{intrest || "Not Added "}</strong>
               </p>
               <p>

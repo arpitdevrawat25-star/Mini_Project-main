@@ -47,24 +47,24 @@ const DivOne = ({ location }: { location: Location }) => {
 
 const DivTwo = ({ location }: { location: Location }) => {
 	return (
-		<div>
-			<h5>Charts</h5>
-			<ul>
-				<Li
-					url="/admin/chart/pie"
-					text="Pie"
-					Icon={FaChartPie}
-					location={location}
-				/>
-				<Li
-					url="/admin/chart/line"
-					text="Line"
-					Icon={FaChartLine}
-					location={location}
-				/>
-			</ul>
-		</div>
-	);
+    <div>
+      <h5>Charts</h5>
+      <ul>
+        <Li
+          url="/admin/chart/pie"
+          text="Pie"
+          Icon={FaChartPie}
+          location={location}
+        />
+        <Li
+          url="/admin/chart/line"
+          text="Line"
+          Icon={FaChartLine}
+          location={location}
+        />
+      </ul>
+    </div>
+  );
 };
 
 interface LiProps {

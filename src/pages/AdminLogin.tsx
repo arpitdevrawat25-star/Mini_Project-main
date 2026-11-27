@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import { useState } from "react";
 import type { FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/AdminLogin.scss";
@@ -21,7 +21,13 @@ function AdminLogin() {
       });
       const data = await res.json();
       if (data.ok) {
-        saveProfile(data.name, data.education);
+        saveProfile(
+          data.name,
+          data.education,
+          data.intrest,
+          data.experience,
+          data.skills,
+        );
         localStorage.setItem("isAdmin", "true");
         navigate("/admin/dashboard");
       } else {

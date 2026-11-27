@@ -30,8 +30,15 @@ ChartJS.register(
 const carrier = [
   "Software Developer",
   "Data Analyst",
-  "Product Design Meetup",
-  "UI Designer",
+  "UI/UX Designer",
+  "Digital Marketer",
+  "Cybersecurity Analyst",
+  "Project Manager",
+  "Web Designer",
+  "Machine Learning Engineer",
+  "Network Engineer",
+  "Content Writer",
+  "Database Administrator",
 ];
 
 interface BarChartProps {
@@ -132,7 +139,8 @@ export const DoughnutChart = ({
         display: legends,
         position: "bottom",
         labels: {
-          padding: 40,
+          padding: 5,
+          boxWidth: 5,
         },
       },
     },
